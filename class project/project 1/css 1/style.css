@@ -1,0 +1,16 @@
+#hello{
+    background-color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.id{
+    color: cyan;
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.myclass{
+    color: chocolate;
+}
+h5,p{
+    color: cornflowerblue;
+}
