@@ -1,0 +1,27 @@
+body  {
+    font-family: sans-serif;
+    background-color: rgb(34, 34, 34);
+    color: aliceblue;
+}
+h1 {
+    color: green;
+}
+a {
+    color: blue;
+}
+
+ul > li {
+    font-weight: bold;
+}
+h1 + p {
+    color: blue;
+}
+ul li:hover {
+    color: rgb(0, 0, 143);
+}
+ul li::before {
+    content: 🐱‍🚀;
+}
+a::after {
+    content: 🎶;
+}
