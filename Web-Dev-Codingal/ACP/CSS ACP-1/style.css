@@ -1,0 +1,12 @@
+#external {
+    color: blue;
+}
+.class {
+    color: red;
+}
+#id {
+    color: aquamarine;
+}
+h5 + p {
+    font: bold;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.normal {
+right: 30px;
+border: 3px solid rgb(49, 49, 49);
+        }
+        div.absolute {
+            position: absolute;
+            left: 100px;
+            top: 50px;
+            border: 3px solid red;
+            width: 1000px;
+        }
+        div.relative {
+            position: relative;
+            left: 50px;
+            right: 100px;
+            border: 3px solid green;
+        }
+        div.fixed {
+            position: fixed;
+            top: 30px;
+            right: 100px;
+            border: 3px solid cyan;
+        }
+        div.sticky {
+          position: sticky;
+          top: 0px;
+          left: 50px;
+          width: 200px;
+          border: 3px solid grey;
+        }
+      
+    </style>
+</head>
+<body>
+    <h2>POSITIONING</h2>
+    <div class="normal">
+        Div with no positions property
+    </div>
+    <div class="sticky">
+        Div with sticky positions
+    </div>
+    <div class="relative">
+    This div element has positions: relatiove;
+
+        <!-- moves relative to paren div -->
+         <div class="absolute">
+
+            Absolute class DIV
+
+    </div>
+    <!-- moves relative to html -->
+     <div class="absolute">
+        Absolute class DIV out side the relative one
+     </div>
+    <div class="fixed">
+        Div with fixed positions properly
+    </div>
+</body>
+</html>
