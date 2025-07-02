@@ -1,0 +1,27 @@
+<html>
+<body>
+    <h2>JavaScript Class</h2>
+    <p id="details"></p>
+    <script>
+        class car {
+            constructor(brand) {
+                this.carname = brand;
+            }
+            present() {
+                return 'Ihave a ' + this.carname;
+            }
+        }
+        class Model extends car {
+            constructor(brand, mod) {
+                super(brand);
+                this.Model = mod;
+            }
+            show() {
+                return this.present() + ', it is a ' + this.Model;
+            }
+        }
+        let mycar = new Model("Farari", "BMW");
+        document.getElementById("details").innerHTML = mycar.show();
+    </script>
+</body>
+</html>
