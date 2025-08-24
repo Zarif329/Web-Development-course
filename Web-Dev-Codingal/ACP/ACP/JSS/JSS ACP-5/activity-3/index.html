@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Pick A Random Fruit!</h2>
+    <p>Click the buton</p>
+    <button onclick="pickfruit()">Click me</button>
+    <p id="ans"></p>
+    <script>
+var fruits = ["Apple 🍎", "Banana 🍌", "Grapes 🍇", "Mango 🥭", "Pineapple 🍍", "Strawberry 🍓"];
+
+        function pickfruit() {
+            var n = fruits.length; 
+
+            var takerandom = Math.random() * n
+            
+
+            var randomindex = Math.floor(takerandom);
+
+            document.getElementById("ans").innerHTML = "Yous Got: " + fruits[randomindex];
+        }
+    </script>
+        
+</body>
+</html>

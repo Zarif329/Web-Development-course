@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <button onclick="acseding()">acseding order</button>
+    <button onclick="decending()">decending order</button>
+    <p id="result"></p>
+    <script>
+        var points = [90,12,13,44,577,89,85,3453,25,3424,];
+        document.getElementById("result").innerHTML = points;
+        function acseding() {
+        points.sort(function (a,b) {return a - b} );
+        document.getElementById("result").innerHTML = "The acseding number is  " + points;
+        }
+        function decending() {
+        points.sort(function (a,b) {return b - a} );
+        document.getElementById("result").innerHTML = "The decending number is  " + points;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Form (18+)</title>
+</head>
+<body>
+  <h2>Login Form</h2>
+
+  
+  <form id="loginForm">
+ 
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <br><br>
+
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" required>
+    <br><br>
+
+   
+    <button type="submit">Login</button>
+  </form>
+
+ 
+  <p id="message"></p>
+
+  <script>
+    
+    const form = document.getElementById("loginForm");
+
+    
+    form.addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+      
+      const name = document.getElementById("name").value;
+      const age = parseInt(document.getElementById("age").value);
+      const message = document.getElementById("message");
+
+      
+      if (age >= 18) {
+        message.textContent = "✅ Welcome, " + name + "! You are allowed to login.";
+      } else {
+        message.textContent = "❌ Sorry, " + name + ". You must be at least 18.";
+      }
+    });
+  </script>
+</body>
+</html>

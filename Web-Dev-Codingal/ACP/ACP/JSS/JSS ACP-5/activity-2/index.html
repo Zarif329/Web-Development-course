@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>
+
+        join pop and push.
+    </h1>
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+    <p id="myfirstPush"></p>
+
+    <script>
+        var fruits = ["banana","orange","apple","mango"];
+
+        document.getElementById("myjoin").innerHTML = fruits.join("-");
+
+
+        document.getElementById("myfirstpop").innerHTML = fruits;
+        fruits.pop();
+
+
+        document.getElementById("mysecondpop").innerHTML = fruits;
+        fruits.push("kiwi");
+
+        document.getElementById("myfirstPush").innerHTML = 
+        
+        fruits;
+    </script>
+        
+</body>
+</html>
